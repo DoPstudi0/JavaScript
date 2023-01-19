@@ -1,43 +1,59 @@
-let admin;
-let name;
-name = "Джон";
-admin = name;
-console.log(admin)
-
-//баланс пользователя
-let balance = 25000;
-console.log(`Баланс: ${balance}`)
-
-//траты 
-let car = 4480;
-let food = 890;
-//плюсовать траты.
-let car_food = car + food;
-//вывести итог трат 
-console.log(`Расходы: ${car_food}`)
+//задание 1
+let str = 'aaa@bbb@ccc';
 
 
-//доходы
-let invoice = 5500;
-let stock = 4200;
-//плюсовать доход.
-let inv_st = invoice + stock;
-//вывести итог дохода
-console.log(`Доход: ${inv_st}`)
+console.log(
+    str.replace(/@/g, '!')
+);
+//конец задания 1
+
+//задание 2
+let text = 'HELLOWORLD'
+let textwo = text.slice(0, text.search('O') + 1).toLowerCase();
+let texthree = textwo.charAt(0).toUpperCase() + textwo.slice(1);
+let textfour = text.slice(text.search('O') + 1).toLowerCase();
+
+console.log(texthree, textfour);
+//конец задания 2
+
+//задание 3
+let title = 'Hello, it is HTML';
+let js = ' not JS';
 
 
-//отнять доход от трат 
-let profit = inv_st - car_food;
-console.log (`Прибыль ${profit}`)
+console.log(
+    title.slice(title.search('Hello, it is'), title.search('Hello, it is') + 12) +
+    js
+);
+//конец задания 3
 
-//итоги
-let calculation = inv_st - car_food;
-let totalBalance = calculation + balance ;
-console.log(`Итог: ${totalBalance} сум` )
+//задание 4
+let user_name = 'alex'
+
+console.log(
+    user_name.charAt(0).toLocaleUpperCase() + user_name.slice(1)
+);
+//конец задания 4
+
+//задание 5
+let num = Math.random() * 100000000000000000
+
+
+console.log(
+    num
+);
+//конец задания 5
 
 
 
 
+//задание 6
+let change = 'Lex Luter has a big suit';
 
-
-
+console.log(
+    change.slice(change.search('a'), change.search('a') + 1).toUpperCase() +
+    change.slice(change.search('L'), change.search('L') + 1).toUpperCase() +
+    change.slice(change.search('e'), change.search('e') + 1) +
+    change.slice(change.search('x'), change.search('x') + 1)
+);
+//конец задания 6
